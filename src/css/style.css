@@ -1,7 +1,40 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+}
+
+/* this is header styles */
+header {
+	nav,
+	li {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+/* this is first section styles  */
+
+#hero {
+	article {
+		max-width: 483px;
+		display: inline-block;
+		vertical-align: middle;
+
+		margin: 0 20px;
+		.article-content {
+			padding: 20px 12px;
+			background-color: #fff;
+			box-shadow: 0px 3px 6px #00000029;
+			a {
+				text-align: right;
+				display: block;
+			}
+		}
+	}
 }
 
 
