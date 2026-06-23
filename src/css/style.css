@@ -6,6 +6,10 @@
 img {
 	max-width: 100%;
 }
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
 /* this is header styles */
 header {
@@ -14,10 +18,29 @@ header {
 		display: inline-block;
 		vertical-align: middle;
 	}
+
+	padding: 20px;
+	background-color: lightpink;
+	border-radius: 0;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	/* width: 100%; */
 }
 
 /* this is first section styles  */
 
+body {
+	padding-top: 130px;
+}
+#main {
+	position: sticky;
+	top: 80px;
+	z-index: 10;
+}
 #hero {
 	article {
 		max-width: 483px;
@@ -25,10 +48,17 @@ header {
 		vertical-align: middle;
 
 		margin: 0 20px;
+		position: relative;
+
 		.article-content {
 			padding: 20px 12px;
 			background-color: #fff;
 			box-shadow: 0px 3px 6px #00000029;
+
+			position: absolute;
+			top: 30px;
+			left: 0;
+			right: 0;
 			a {
 				text-align: right;
 				display: block;
@@ -37,15 +67,13 @@ header {
 	}
 }
 
-
 h1 {
-  color: #a90ec8;
+	color: #a90ec8;
 }
 
-
-.container 
- {border: 1px solid #a90ec8;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  background-color: #f5f5f5;}
+.container {
+	border: 1px solid #a90ec8;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #f5f5f5;
+}
